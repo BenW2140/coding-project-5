@@ -4,7 +4,12 @@ export class User {
     this.age = age;
   }
 
-  calculateAge(age) {
+  mercuryAge(age) {
+    age /= .24;
+    return Math.floor(age);
+  }
+
+  venusAge(age) {
     age /= .24;
     return Math.floor(age);
   }

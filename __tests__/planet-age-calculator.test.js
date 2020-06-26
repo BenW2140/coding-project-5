@@ -10,7 +10,12 @@ describe('User', () => {
 
   test('should correctly calculate the users age using Mercurys solar year', () => {
     const user = new User('Ben', 23);
-    expect(user.calculateAge(user.age)).toEqual(95);
+    expect(user.mercuryAge(user.age)).toEqual(95);
+  });
+
+  test('should correctly calculate the users age using Venus solar year', () => {
+    const user = new User('Ben', 23);
+    expect(user.venusAge(user.age)).toEqual(37);
   });
 
 });
