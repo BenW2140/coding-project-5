@@ -13,4 +13,9 @@ export class User {
     age /= .62;
     return Math.floor(age);
   }
+
+  marsAge(age) {
+    age /= .62;
+    return Math.floor(age);
+  }
 }

@@ -18,4 +18,9 @@ describe('User', () => {
     expect(user.venusAge(user.age)).toEqual(37);
   });
 
+  test('should correctly calculate the users age using Mars solar year', () => {
+    const user = new User('Ben', 23);
+    expect(user.marsAge(user.age)).toEqual(12);
+  });
+
 });
