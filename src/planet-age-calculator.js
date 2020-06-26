@@ -21,4 +21,8 @@ export class User {
   jupiterAge(age) {
     return Math.floor(age /= 11.86);
   }
+
+  calculateLifeExpectancy(gender, nationality) {
+
+  }
 }

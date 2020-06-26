@@ -6,6 +6,8 @@ describe('User', () => {
     const user = new User('Ben', 23, 'Male', 'United States');
     expect(user.name).toEqual('Ben');
     expect(user.age).toEqual(23);
+    expect(user.gender).toEqual('Male');
+    expect(user.nationality).toEqual('United States');
   });
 
   test('should correctly calculate the users age using Mercurys solar year', () => {
@@ -29,7 +31,8 @@ describe('User', () => {
   });
 
   test('should correctly calculate life expectancy for the given planet', () => {
-
+    const user = new User('Ben', 23, 'Male', 'United States');
+    expect(user.calculateLifeExpectancy(user.gender, user.nationality)).toEqual(68)
   });
 
 });
