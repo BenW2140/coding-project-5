@@ -7,6 +7,7 @@
 </head>
 <body>
   <div class="container">
+    <h2>Calculate your age on other planets!</h2>
     <form id="user-info">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -23,21 +24,23 @@
         <option>Mars</option>
         <option>Jupiter</option>
       </select>
-      <h3>The following responses are to determine your life expectancy:</h3>
-      <p><em>(and is certainly 100% accurate)</em></p>
+      <h4>The following responses are to determine your life expectancy:</h4>
+      <p><em>(which is certainly 100% accurate)</em></p>
       <p>Biological Gender:</p>
       <select class="form-group" id="gender">
         <option>Male</option>
         <option>Female</option>
       </select>
       <p>Nationality:</p>
-      <select class="form-group" id="nationality">
-        <option>American</option>
-        <option>Mexican</option>
-        <option>Canadian</option>
-        <option>English</option>
-      </select>
-      <button type="submit" class="btn">Submit</button>
+      <div>
+        <select class="form-group" id="nationality">
+          <option>American</option>
+          <option>Mexican</option>
+          <option>Canadian</option>
+          <option>English</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-light">Submit</button>
     </form>
     <div id="output">
       <p>Your age on <span class="planet-input"></span> is: <span class="planet-age"></span></p>
