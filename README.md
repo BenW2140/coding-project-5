@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Planet Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Calculate age based on a planet's solar year, June 26, 2020_
 
 #### By _**Ben White**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This webpage will calculate how old you are, in years, based on a given planet's solar year_
 
 ## Setup/Installation Requirements
 
@@ -22,19 +22,26 @@ Open by downloading:
 
 Open via Bash/GitBash:
 
-1. Clone this repository onto your computer: https://github.com/BenW2140/{project-name}
-2. Navigate into the {project-name} directory in Visual Studio Code or preferred text editor code .
+1. Clone this repository onto your computer: https://github.com/BenW2140/coding-project-5
+2. Navigate into the coding-project-5 directory in Visual Studio Code or preferred text editor code .
 3. Open index.html in Chrome or preferred browser: open index.html
 
 Open using Git Pages:
 
-1. Follow this link: https://BenW2140.github.io/{project-name}
+1. Follow this link: https://BenW2140.github.io/coding-project-5
 
 ## Specs
 
-| |
+Behavior|Input|Output
 ------|------|------
-| |
+This program will accept a user's name|Ben|Ben
+This program will accept a user's age|23|23
+This program will use the user's age to calculate their age for mercury's solar year|23|95
+This program will use the user's age to calculate their age for Venus' solar year|23|37
+This program will use the user's age to calculate their age for Mars' solar year|23|12
+This program will use the user's age to calculate their age for Jupiter's solar year|23|1
+This program will calculate the user's life expectancy for each planet|Mars age: 12|29 Mars years left to live
+This program will return how many years over the life expectancy they have lived for each planet if they have surpassed the average life expectancy|Mars age: 50|You have lived 8 years longer than average! Congratulations!
 
 ## Known Bugs
 
@@ -42,11 +49,11 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Ben White: bwhite2140@outlook.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Git, Javascript, Jest, Node_
 
 ### License
 
