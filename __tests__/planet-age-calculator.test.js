@@ -41,4 +41,9 @@ describe('User', () => {
     expect(user.calculatePlanetLifeExpectancy(user.age, user.planet)).toEqual(187);
   });
 
+  test('should correctly calculate how many years past the average life expectancy the user has lived, if they are older than the average life expectancy', () => {
+    const user = new User('Marvin', 91, 'Mars', 'Male', 'United States');
+    expect(user.calculatePlanetLifeExpectancy(user.age, user.planet)).toEqual(12);
+  });
+
 });
