@@ -36,6 +36,8 @@ Behavior|Input|Output
 ------|------|------
 This program will accept a user's name|Ben|Ben
 This program will accept a user's age|23|23
+This program will accept a user's gender|Male|Male
+This program will accept a user's nationality|United States|United States
 This program will use the user's age to calculate their age for Mercury's solar year|23|95
 This program will use the user's age to calculate their age for Venus' solar year|23|37
 This program will use the user's age to calculate their age for Mars' solar year|23|12

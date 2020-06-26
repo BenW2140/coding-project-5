@@ -1,7 +1,9 @@
 export class User {
-  constructor(name, age) {
+  constructor(name, age, gender, nationality) {
     this.name = name;
     this.age = age;
+    this.gender = gender;
+    this.nationality = nationality
   }
 
   mercuryAge(age) {
