@@ -36,12 +36,14 @@ Behavior|Input|Output
 ------|------|------
 This program will accept a user's name|Ben|Ben
 This program will accept a user's age|23|23
+This program will accept the planet of the user's choosing|Mercury|Mercury
 This program will accept a user's gender|Male|Male
 This program will accept a user's nationality|United States|United States
 This program will use the user's age to calculate their age for Mercury's solar year|23|95
 This program will use the user's age to calculate their age for Venus' solar year|23|37
 This program will use the user's age to calculate their age for Mars' solar year|23|12
 This program will use the user's age to calculate their age for Jupiter's solar year|23|1
+This program will calculate the user's life expectancy in earth years|Gender: Male, Nationality: United States|Life expectancy: 68 years
 This program will calculate the user's life expectancy for each planet|Mars age: 12|29 Mars years left to live
 This program will return how many years over the life expectancy they have lived for each planet if they have surpassed the average life expectancy|Mars age: 50|You have lived 8 years longer than average! Congratulations!
 

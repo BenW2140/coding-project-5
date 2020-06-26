@@ -4,7 +4,7 @@ export class User {
     this.age = age;
     this.planet = planet;
     this.gender = gender;
-    this.nationality = nationality
+    this.nationality = nationality;
   }
 
   calculatePlanetAge(age, planet) {
@@ -23,6 +23,17 @@ export class User {
   }
 
   calculateLifeExpectancy(gender, nationality) {
-
+    let userLifeExpectancy = 70;
+    if (gender === 'Male') {
+      userLifeExpectancy--;
+    } else {
+      userLifeExpectancy++;
+    }
+    if (nationality === 'United States' || nationality === 'Mexico') {
+      userLifeExpectancy--;
+    } else {
+      userLifeExpectancy++;
+    }
+    return userLifeExpectancy;
   }
 }
