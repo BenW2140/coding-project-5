@@ -37,8 +37,7 @@ export class User {
     return userLifeExpectancy;
   }
 
-  calculatePlanetLifeExpectancy(age, planet) {
-    const lifeExpectancy = this.calculateLifeExpectancy(this.gender, this.nationality);
+  calculatePlanetLifeExpectancy(lifeExpectancy, age, planet) {
     if (age > lifeExpectancy) {
       const extraYears = age - lifeExpectancy;
       const extraSpaceYears = this.calculatePlanetAge(extraYears, planet);
