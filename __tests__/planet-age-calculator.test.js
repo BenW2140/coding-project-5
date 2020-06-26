@@ -1,4 +1,5 @@
 import { User } from './../src/planet-age-calculator.js';
+import { numberOfMayflies } from './../src/planet-age-calculator.js'
 
 describe('User', () => {
 
@@ -48,7 +49,7 @@ describe('User', () => {
 
   test('should correctly calculate how many mayflies the user has outlived', () => {
     const user = new User('Marvin', 91, 'Mars', 'Male', 'American');
-    expect(user.numberOfMayflies(user.age)).toEqual(9565920);
+    expect(numberOfMayflies(user.age)).toEqual(9565920);
   });
 
 });

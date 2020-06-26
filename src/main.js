@@ -3,12 +3,14 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { User } from './../src/planet-age-calculator.js';
+import { numberOfMayflies } from './../src/planet-age-calculator.js'
 
 $(document).ready(function() {
   $('#user-info').submit(function(event) {
     event.preventDefault();
     const name = $('#name').val();
     const age = parseInt($('#age').val());
+    const sunAge = 4603000000;
     const planet = $('#planet').val();
     const gender = $('#gender').val();
     const nationality = $('#nationality').val();
@@ -24,6 +26,8 @@ $(document).ready(function() {
     } else {
       $('#under').hide();
     }
+    $('#mayflies-user').text(numberOfMayflies(age));
+    $('#mayflies-sun').text(numberOfMayflies(sunAge));
     $('#output').show();
   });
 });

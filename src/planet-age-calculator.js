@@ -48,12 +48,12 @@ export class User {
       return spaceYearsToLive;
     }
   }
+}
 
-  numberOfMayflies(age) {
-    const mayflyLifespan = 5;
-    const minutesInAYear = 525600;
-    const mayfliesInAYear = minutesInAYear / mayflyLifespan
-    const outlivedMayflies = age * mayfliesInAYear;
-    return outlivedMayflies;
-  }
+export function numberOfMayflies(age) {
+  const mayflyLifespan = 5;
+  const minutesInAYear = 525600;
+  const mayfliesInAYear = minutesInAYear / mayflyLifespan;
+  const outlivedMayflies = age * mayfliesInAYear;
+  return outlivedMayflies;
 }
