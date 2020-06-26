@@ -29,7 +29,7 @@ export class User {
     } else {
       userLifeExpectancy++;
     }
-    if (nationality === 'United States' || nationality === 'Mexico') {
+    if (nationality === 'American' || nationality === 'Mexican') {
       userLifeExpectancy--;
     } else {
       userLifeExpectancy++;
