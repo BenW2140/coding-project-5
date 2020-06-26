@@ -36,4 +36,8 @@ export class User {
     }
     return userLifeExpectancy;
   }
+
+  calculatePlanetLifeExpectancy(age, planet) {
+    
+  }
 }

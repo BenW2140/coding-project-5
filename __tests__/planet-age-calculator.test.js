@@ -36,8 +36,9 @@ describe('User', () => {
     expect(user.calculateLifeExpectancy(user.gender, user.nationality)).toEqual(68)
   });
 
-  // test('should coorectly calculate life expectancy for the user on the given planet', () => {
-  //   const user = new User('Ben', 23, 'Mercury', 'Male', 'United States');
-  // });
+  test('should correctly calculate how long the user has to live on the given planet', () => {
+    const user = new User('Ben', 23, 'Mercury', 'Male', 'United States');
+    expect(user.calculatePlanetLifeExpectancy(user.age, user.planet)).toEqual(187);
+  });
 
 });

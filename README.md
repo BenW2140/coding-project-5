@@ -57,7 +57,7 @@ _Ben White: bwhite2140@outlook.com_
 
 ## Technologies Used
 
-_Git, Javascript, Jest, Node_
+_Git, Javascript, Jest, Node, Webpack_
 
 ### License
 
