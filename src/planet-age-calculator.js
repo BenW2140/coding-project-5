@@ -17,6 +17,6 @@ export class User {
   }
 
   jupiterAge(age) {
-    return Math.floor(age /= 1.88);
+    return Math.floor(age /= 11.86);
   }
 }
