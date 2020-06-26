@@ -3,4 +3,9 @@ export class User {
     this.name = name;
     this.age = age;
   }
+
+  calculateAge(age) {
+    age /= .24;
+    return age;
+  }
 }
