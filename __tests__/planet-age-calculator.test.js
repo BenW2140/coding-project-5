@@ -46,4 +46,9 @@ describe('User', () => {
     expect(user.calculatePlanetLifeExpectancy(user.calculateLifeExpectancy(user.gender, user.nationality), user.age, user.planet)).toEqual(12);
   });
 
+  test('should correctly calculate how many mayflies the sun has outlived', () => {
+    const user = new User('Marvin', 91, 'Mars', 'Male', 'American');
+    expect(user.numberOfMayflies(user.age)).toEqual(9565920);
+  });
+
 });

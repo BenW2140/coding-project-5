@@ -46,6 +46,7 @@ This program will use the user's age to calculate their age for Jupiter's solar 
 This program will calculate the user's life expectancy in earth years|Gender: Male, Nationality: United States|Life expectancy: 68 years
 This program will calculate the user's life expectancy for each planet|Mars age: 12|29 Mars years left to live
 This program will return how many years over the life expectancy they have lived for each planet if they have surpassed the average life expectancy|Mars age: 50|You have lived 8 years longer than average! Congratulations!
+This program will return how many mayflies the user has outlived and compare that number to the amount the sun has outlived|Age: 91|9,565,920 mayflies outlived
 
 ## Known Bugs
 
