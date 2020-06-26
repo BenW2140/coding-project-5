@@ -39,8 +39,14 @@ export class User {
 
   calculatePlanetLifeExpectancy(age, planet) {
     const lifeExpectancy = this.calculateLifeExpectancy(this.gender, this.nationality);
-    const yearsToLive = lifeExpectancy - age;
-    const spaceYearsToLive = this.calculatePlanetAge(yearsToLive, planet);
-    return spaceYearsToLive;
+    if (age > lifeExpectancy) {
+      const extraYears = age - lifeExpectancy;
+      const extraSpaceYears = this.calculatePlanetAge(extraYears, planet);
+      return extraSpaceYears;
+    } else {
+      const yearsToLive = lifeExpectancy - age;
+      const spaceYearsToLive = this.calculatePlanetAge(yearsToLive, planet);
+      return spaceYearsToLive;
+    }
   }
 }
