@@ -10,7 +10,7 @@ export class User {
   }
 
   venusAge(age) {
-    age /= .24;
+    age /= .62;
     return Math.floor(age);
   }
 }
