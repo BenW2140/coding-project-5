@@ -6,6 +6,6 @@ export class User {
 
   calculateAge(age) {
     age /= .24;
-    return age;
+    return Math.floor(age);
   }
 }
