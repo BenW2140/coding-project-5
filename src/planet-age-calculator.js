@@ -5,17 +5,14 @@ export class User {
   }
 
   mercuryAge(age) {
-    age /= .24;
-    return Math.floor(age);
+    return Math.floor(age /= .24);
   }
 
   venusAge(age) {
-    age /= .62;
-    return Math.floor(age);
+    return Math.floor(age /= .62);
   }
 
   marsAge(age) {
-    age /= .62;
-    return Math.floor(age);
+    return Math.floor(age /= 1.88);
   }
 }
