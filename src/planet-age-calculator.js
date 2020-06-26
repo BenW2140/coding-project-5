@@ -54,6 +54,6 @@ export class User {
     const minutesInAYear = 525600;
     const mayfliesInAYear = minutesInAYear / mayflyLifespan
     const outlivedMayflies = age * mayfliesInAYear;
-    // return outlivedMayflies;
+    return outlivedMayflies;
   }
 }
