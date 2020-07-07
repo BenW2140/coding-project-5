@@ -5,46 +5,47 @@ export class User {
     this.planet = planet;
     this.gender = gender;
     this.nationality = nationality;
+    this.lifeExpectancy = 70;
   }
 
-  calculatePlanetAge(age, planet) {
-    switch (planet) {
+  calculatePlanetAge() {
+    switch (this.planet) {
       case ('Mercury'):
-        return Math.floor(age /= .24);
+        return Math.floor(this.age /= .24);
       case ('Venus'):
-        return Math.floor(age /= .62);
+        return Math.floor(this.age /= .62);
       case ('Mars'):
-        return Math.floor(age /= 1.88);
+        return Math.floor(this.age /= 1.88);
       case ('Jupiter'):
-        return Math.floor(age /= 11.86);
+        return Math.floor(this.age /= 11.86);
       default:
         break;
     }
   }
 
-  calculateLifeExpectancy(gender, nationality) {
-    let userLifeExpectancy = 70;
-    if (gender === 'Male') {
-      userLifeExpectancy--;
+  calculateLifeExpectancy() {
+    if (this.gender === 'Male') {
+      this.lifeExpectancy--;
     } else {
-      userLifeExpectancy++;
+      this.lifeExpectancy++;
     }
-    if (nationality === 'American' || nationality === 'Mexican') {
-      userLifeExpectancy--;
+    if (this.nationality === 'American' || nationality === 'Mexican') {
+      this.lifeExpectancy--;
     } else {
-      userLifeExpectancy++;
+      this.lifeExpectancy++;
     }
-    return userLifeExpectancy;
+    return this.lifeExpectancy;
   }
 
-  calculatePlanetLifeExpectancy(lifeExpectancy, age, planet) {
-    if (age > lifeExpectancy) {
-      const extraYears = age - lifeExpectancy;
-      const extraSpaceYears = this.calculatePlanetAge(extraYears, planet);
+  calculatePlanetLifeExpectancy() {
+    this.calculateLifeExpectancy();
+    if (this.age > this.lifeExpectancy) {
+      const extraYears = this.age - this.lifeExpectancy;
+      const extraSpaceYears = this.calculatePlanetAge();
       return extraSpaceYears;
     } else {
-      const yearsToLive = lifeExpectancy - age;
-      const spaceYearsToLive = this.calculatePlanetAge(yearsToLive, planet);
+      const yearsToLive = this.lifeExpectancy - this.age;
+      const spaceYearsToLive = this.calculatePlanetAge();
       return spaceYearsToLive;
     }
   }
