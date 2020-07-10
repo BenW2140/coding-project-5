@@ -32,19 +32,29 @@ describe('User', () => {
     expect(user.calculatePlanetAge()).toEqual(1);
   });
 
+  test('should return an error message if no planet is selected', () => {
+    const user = new User('Ben', 23, 'Male', 'American');
+    expect(user.calculatePlanetAge()).toEqual("Please select a planet.");
+  });
+
   test('should correctly calculate life expectancy for the user in earth years', () => {
     const user = new User('Ben', 23, 'Mercury', 'Male', 'American');
     expect(user.calculateLifeExpectancy()).toEqual(68)
   });
 
   test('should correctly calculate how long the user has to live on the given planet', () => {
-    const user = new User('Ben', 23, 'Mercury', 'Male', 'American');
-    expect(user.calculatePlanetLifeExpectancy()).toEqual(187);
+    const user = new User('Jane', 23, 'Mercury', 'Female', 'Canadian');
+    expect(user.calculateYearsToLive()).toEqual(204);
   });
 
   test('should correctly calculate how many years past the average life expectancy the user has lived, if they are older than the average life expectancy', () => {
     const user = new User('Marvin', 91, 'Mars', 'Male', 'American');
-    expect(user.calculatePlanetLifeExpectancy()).toEqual(12);
+    expect(user.calculateYearsToLive()).toEqual(12);
+  });
+
+  test('should return an error message if no planet is selected', () => {
+    const user = new User('Ben', 23, 'Male', 'American');
+    expect(user.calculatePlanetLifeExpectancy()).toEqual("Please select a planet.");
   });
 
   test('should correctly calculate how many mayflies the user has outlived', () => {
